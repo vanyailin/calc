@@ -1,0 +1,34 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="ext2.js"> </script>
+		<script type="text/javascript" src="vue.js"> </script>
+	</head>
+
+	<body>
+		<div id = "app">
+		<div>
+		<input type = "number" v-model = "firstNumber">	
+		</div>
+		<div>
+		<input type = "number" v-model= "secondNumber">
+		</div>
+		<button v-on:click = "plus">
+		+
+		</button>
+		<button v-on:click = "minus">
+		-
+		</button>
+		<button v-on:click = "umn">
+		*
+		</button>
+		<button v-on:click = "del">
+		/
+		</button>
+		<div v-for = "result in result1">
+		<input type = "number" v-model = "result.value">	
+		</div>
+		</div>
+	</body>
+</html>
